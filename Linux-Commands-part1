@@ -1,4 +1,5 @@
-Terminal: Its a kind of app that handles the input from user and displays the output . For example : In Mac os we have iTerm2 or in windows its putty.
+**Definition of Terminal:** Its a kind of app that handles the input from user and displays the output . For example : In Mac os we have iTerm2 or in windows its putty.
+
 Shell : Its a command line interface. It provides an interface between the user and the kernel and executes programs called commands. 
 The Shell is the name of the program that runs in the terminal 
 Types of Shell : Bash Shell , ZSH shell . 
