@@ -16,24 +16,41 @@ Scenario: Lets say if am running python3 command , how does system will understa
 the commmand "where python3 " and it will be execute then ==> where python3 (o/p =Note − /usr/local/bin/python3 is the path of the Python directory.)
 ls : list of files in present working directory
 ls -a : Show all the hidden files in the directory
+touch: to create a empty file
+ls -l: For log list of the value.
 pwd: present working directory 
-Once i open a new directory it will by default point to my home directory i.e /Users/kriti
+Once i open a new directory it will by default point to my home directory i.e /Users/name
 Whatever command i will run , it will execute in the same folder where currently i will be pointing to 
-mkdir test : Create a new folder with test name
+
+mkdir test : Create a new folder/directory with test name
 cd test: Change current working directory/folder to test folder
 cd.. : To get one folder back from current working directory
+
 Environment variable in linux : Environment variables allow to customize how the system works and the behavior of the applications on the system. 
 echo $PATH : It specifies the directories to be searched to find a command . like if we run python3 command it is going to search that executable command 
 in each of the location specfied in PATH Env variable.
+export: to set-up Environment variable i.e- export name="devops"
+Note: To setup Environment permanently we have update .bashrc
+vi: to modify/edit any file i.e- vi .bashrc
+To save and quit: :wq
+To relect the changes: source .bashrc
 cat ~/.bashrc. ==> Cat displays the content of a file . So basically here it means to open display the content of bashrc file located in home directory
 bashrc is a file that will automatically be loaded once a interactive terminal open . So all kind of env variable settings or alias setting we store here
+
+
+Note:In shell scripting, an alias is indeed a way to set short names for longer commands, as you've correctly noted. For example, with the alias a="docker run nginx", typing a in the terminal will execute the command docker run nginx. This is useful for creating shortcuts for frequently used commands, making your workflow more efficient.
+Environment variables, on the other hand, are variables that hold values accessible by all programs executed by the shell. These variables are set using the export command. When you execute export mysql_password="my-secret-pw", you're setting an environment variable named mysql_password with the value "my-secret-pw". However, this setting is only valid for the current terminal session.
+To make environment variable changes persistent across terminal sessions, you would typically add them to your shell configuration file, such as .bashrc or .bash_profile (depending on your shell). This ensures that the variables are set every time you start a new terminal session.
+When you run echo $mysql_password, you're instructing the shell to display the value of the mysql_password variable. This command will output "my-secret-pw", assuming you've set the variable as described earlier. It's a way to check the value of environment variables within your shell environment.
+
 alias : Alias in shell means to set short names for a long command like [alias a="docker run nginx"] . Now if we run "a" then it will call "docker run nginx"
 Now to set environment variable in shell we need to use export command like [export mysql_password="my-secret-pw"]. This will only be valid for a particular
 terminal session . If you need change permanent then make change in bashrc file as explained above .
 echo $mysql_password ==> Will give value of mysql_password variable.
+
 cat > file.txt. ==>Creating and writing to the same file 
-My name is kriti and to do exit press (ctrl+c)
-Now see content of file.txt , it will show the content as "My name is kriti"  
+My name is Subhojit and to do exit press (ctrl+c)
+Now see content of file.txt , it will show the content as "My name is Subhojit"  
 
 
 Assignments:
